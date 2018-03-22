@@ -87,10 +87,12 @@
 <meta property="og:site_name" content="宏运当头 宇众不同">
 <meta property="og:description" content="ios提交应用商店app store，编译和上传成功后，在itunes connect中选择构建版本，一直显示  “正在处理”  ，刷新页面后，新上传的版本消失！ 继续N次的上传(每次都要改变build version)，尝试使用VPN网络，尝试Application loader，均无效。。。崩溃！！ 各种度娘和google，提示：查看绑定apple id的信箱，apple会将错误信息发送给你">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-22T06:22:50.609Z">
+<meta property="og:image" content="https://zuzuandroid.github.io/cookbook/2018/03/22/ios-build-version-processing/WX20180322-143412@2x.png">
+<meta property="og:updated_time" content="2018-03-22T06:37:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ios上架问题：构建版本 正在处理">
 <meta name="twitter:description" content="ios提交应用商店app store，编译和上传成功后，在itunes connect中选择构建版本，一直显示  “正在处理”  ，刷新页面后，新上传的版本消失！ 继续N次的上传(每次都要改变build version)，尝试使用VPN网络，尝试Application loader，均无效。。。崩溃！！ 各种度娘和google，提示：查看绑定apple id的信箱，apple会将错误信息发送给你">
+<meta name="twitter:image" content="https://zuzuandroid.github.io/cookbook/2018/03/22/ios-build-version-processing/WX20180322-143412@2x.png">
 
 
 
@@ -347,6 +349,7 @@
 <p>各种度娘和google，提示：查看绑定apple id的信箱，apple会将错误信息发送给你。。。打开信箱，收到iTunes Connect发来的错误信息：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Missing Info.plist key - This app attempts to access </span><br><span class="line">privacy-sensitive data without a usage description. The </span><br><span class="line">app<span class="string">'s Info.plist must contain an </span></span><br><span class="line"><span class="string">NSPhotoLibraryUsageDescription key with a string value </span></span><br><span class="line"><span class="string">explaining to the user how the app uses this data.</span></span><br></pre></td></tr></table></figure>
 <p><strong>在plist中的权限必须加上说明</strong></p>
+<p><img src="/cookbook/2018/03/22/ios-build-version-processing/WX20180322-143412@2x.png" alt="截图"></p>
 <p><strong><font size="22">真坑啊!</font></strong></p>
 
       
