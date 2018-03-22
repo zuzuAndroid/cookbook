@@ -252,6 +252,153 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zuzuandroid.github.io/cookbook/cookbook/2018/03/22/ios-build-version-processing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhu Hong Yu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/28079625?s=400&u=ffd9f001b62925f657995514b0e8c78947fe7628&v=4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="宏运当头 宇众不同">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/cookbook/2018/03/22/ios-build-version-processing/" itemprop="url">ios上架问题：构建版本 正在处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T13:58:44+08:00">
+                2018-03-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/cookbook/categories/移动开发/" itemprop="url" rel="index">
+                    <span itemprop="name">移动开发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>ios提交应用商店app store，编译和上传成功后，在itunes connect中选择构建版本，一直显示  “正在处理”  ，刷新页面后，新上传的版本消失！</p>
+<p>继续<strong>N次</strong>的上传(每次都要改变build version)，尝试使用VPN网络，尝试Application loader，均无效。。。<strong>崩溃！！</strong></p>
+<p>各种度娘和google，提示：查看绑定apple id的信箱，apple会将错误信息发送给你。。。打开信箱，收到iTunes Connect发来的错误信息：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Missing Info.plist key - This app attempts to access </span><br><span class="line">privacy-sensitive data without a usage description. The </span><br><span class="line">app<span class="string">'s Info.plist must contain an </span></span><br><span class="line"><span class="string">NSPhotoLibraryUsageDescription key with a string value </span></span><br><span class="line"><span class="string">explaining to the user how the app uses this data.</span></span><br></pre></td></tr></table></figure>
+<p><strong>在plist中的权限必须加上说明</strong></p>
+<p><strong><font size="22">真坑啊!</font></strong></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://zuzuandroid.github.io/cookbook/cookbook/2018/03/21/ionic-immersion-tabs/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -345,7 +492,7 @@
       
         
           
-            <p>Ionic沉浸式Tabs导航栏效果：下拉列表时，底部Tabs自动隐藏，上拉时，则显示（知乎效果）。</p>
+            <p>Ionic沉浸式Tabs导航栏效果：上拉列表时，底部Tabs自动隐藏，下拉时，则显示（知乎效果）。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">获取和定义content</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">@ViewChild(Content) mycontent: Content;</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">在页面初始化时候，获取tabs和判断页面滑动</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">ngAfterViewInit() &#123;</span><br><span class="line">    <span class="keyword">this</span>.tabBarElement = <span class="built_in">document</span>.querySelectorAll(<span class="string">".tabbar"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.mycontent.ionScroll.subscribe(<span class="function">(<span class="params">$event</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span>(<span class="keyword">this</span>.mycontent.directionY == <span class="string">"down"</span>)&#123;</span><br><span class="line">        <span class="keyword">this</span>.hideTabs();</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.showTabs();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">隐藏Tabs</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">hideTabs()&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.tabBarElement != <span class="literal">null</span>) &#123;</span><br><span class="line">      <span class="built_in">Object</span>.keys(<span class="keyword">this</span>.tabBarElement).map(<span class="function">(<span class="params">key</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">this</span>.tabBarElement[key].style.display = <span class="string">'none'</span>;</span><br><span class="line">        <span class="keyword">this</span>.mycontent.resize();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -578,7 +725,7 @@
               
                 <a href="/cookbook/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -589,7 +736,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/cookbook/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -600,7 +747,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/cookbook/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

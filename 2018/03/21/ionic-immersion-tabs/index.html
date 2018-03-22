@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Ionic沉浸式Tabs导航栏效果：下拉列表时，底部Tabs自动隐藏，上拉时，则显示（知乎效果）。 1234/*获取和定义content*/@ViewChild(Content) mycontent: Content; 1234567891011121314/*在页面初始化时候，获取tabs和判断页面滑动*/ngAfterViewInit() &amp;#123;    this.tabBarElemen">
+<meta name="description" content="Ionic沉浸式Tabs导航栏效果：上拉列表时，底部Tabs自动隐藏，下拉时，则显示（知乎效果）。 1234/*获取和定义content*/@ViewChild(Content) mycontent: Content; 1234567891011121314/*在页面初始化时候，获取tabs和判断页面滑动*/ngAfterViewInit() &amp;#123;    this.tabBarElemen">
 <meta name="keywords" content="ionic,angular">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ionic沉浸式Tabs导航栏">
 <meta property="og:url" content="https://zuzuandroid.github.io/cookbook/2018/03/21/ionic-immersion-tabs/index.html">
 <meta property="og:site_name" content="宏运当头 宇众不同">
-<meta property="og:description" content="Ionic沉浸式Tabs导航栏效果：下拉列表时，底部Tabs自动隐藏，上拉时，则显示（知乎效果）。 1234/*获取和定义content*/@ViewChild(Content) mycontent: Content; 1234567891011121314/*在页面初始化时候，获取tabs和判断页面滑动*/ngAfterViewInit() &amp;#123;    this.tabBarElemen">
+<meta property="og:description" content="Ionic沉浸式Tabs导航栏效果：上拉列表时，底部Tabs自动隐藏，下拉时，则显示（知乎效果）。 1234/*获取和定义content*/@ViewChild(Content) mycontent: Content; 1234567891011121314/*在页面初始化时候，获取tabs和判断页面滑动*/ngAfterViewInit() &amp;#123;    this.tabBarElemen">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-21T02:33:06.028Z">
+<meta property="og:updated_time" content="2018-03-21T05:18:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ionic沉浸式Tabs导航栏">
-<meta name="twitter:description" content="Ionic沉浸式Tabs导航栏效果：下拉列表时，底部Tabs自动隐藏，上拉时，则显示（知乎效果）。 1234/*获取和定义content*/@ViewChild(Content) mycontent: Content; 1234567891011121314/*在页面初始化时候，获取tabs和判断页面滑动*/ngAfterViewInit() &amp;#123;    this.tabBarElemen">
+<meta name="twitter:description" content="Ionic沉浸式Tabs导航栏效果：上拉列表时，底部Tabs自动隐藏，下拉时，则显示（知乎效果）。 1234/*获取和定义content*/@ViewChild(Content) mycontent: Content; 1234567891011121314/*在页面初始化时候，获取tabs和判断页面滑动*/ngAfterViewInit() &amp;#123;    this.tabBarElemen">
 
 
 
@@ -342,7 +342,7 @@
       
 
       
-        <p>Ionic沉浸式Tabs导航栏效果：下拉列表时，底部Tabs自动隐藏，上拉时，则显示（知乎效果）。</p>
+        <p>Ionic沉浸式Tabs导航栏效果：上拉列表时，底部Tabs自动隐藏，下拉时，则显示（知乎效果）。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">获取和定义content</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">@ViewChild(Content) mycontent: Content;</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">在页面初始化时候，获取tabs和判断页面滑动</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">ngAfterViewInit() &#123;</span><br><span class="line">    <span class="keyword">this</span>.tabBarElement = <span class="built_in">document</span>.querySelectorAll(<span class="string">".tabbar"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.mycontent.ionScroll.subscribe(<span class="function">(<span class="params">$event</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span>(<span class="keyword">this</span>.mycontent.directionY == <span class="string">"down"</span>)&#123;</span><br><span class="line">        <span class="keyword">this</span>.hideTabs();</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.showTabs();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">隐藏Tabs</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">hideTabs()&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.tabBarElement != <span class="literal">null</span>) &#123;</span><br><span class="line">      <span class="built_in">Object</span>.keys(<span class="keyword">this</span>.tabBarElement).map(<span class="function">(<span class="params">key</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">this</span>.tabBarElement[key].style.display = <span class="string">'none'</span>;</span><br><span class="line">        <span class="keyword">this</span>.mycontent.resize();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -388,6 +388,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/cookbook/2018/03/22/ios-build-version-processing/" rel="prev" title="ios上架问题：构建版本 正在处理">
+                ios上架问题：构建版本 正在处理 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -459,7 +463,7 @@
               
                 <a href="/cookbook/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -470,7 +474,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/cookbook/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -481,7 +485,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/cookbook/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
