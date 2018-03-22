@@ -346,12 +346,14 @@
         
           
             <p><strong>使用WKWebView使得你的cordova应用在IOS更快更流畅</strong></p>
+<p><img src="/cookbook/2018/03/22/ios-wkwebview/1_mzacWImqfr84FxZgRkQ70w.gif" alt="截图"></p>
 <p>插件地址和安装配置说明：</p>
 <blockquote>
 <p><a href="https://github.com/ionic-team/cordova-plugin-ionic-webview" title="github链接" target="_blank" rel="noopener">Github WKWebView</a></p>
 </blockquote>
 <p>在使用过程中你可以通过测试它是否支持IndexDB来判定是UIWebView还是WKWebView</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="built_in">window</span>.indexedDB) &#123;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">"I'm in WKWebView!"</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">"I'm in UIWebView"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
           
         
       
